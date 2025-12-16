@@ -50,74 +50,74 @@ This is a **complete IoT-based Smart Parking System** built with ESP32, featurin
 
 ```
 ESP32 PIN LAYOUT:
-┌─────────────────────────────────────┐
+┌────────────────────────────────────────┐
 │ GND   D35   D34   D33   D32   D5   D23 │
 │ EN    D15   D4    D2    D13   D12  D14 │
 │ SVP   D14   D27   D26   D25   SVN  GND │
 │ VIN   5V    3V3   GND                  │
-└─────────────────────────────────────┘
+└────────────────────────────────────────┘
 ```
 
 ### Detailed Pin Connections
 
 #### LCD1602 (16-Pin Display)
 ```
-LCD Pin → ESP32 Pin | Function
-─────────────────────────────
-1  (VSS)  → GND      | Ground
-2  (VDD)  → 5V       | Power
-3  (VO)   → GND      | Contrast (tied to GND)
-4  (RS)   → D21      | Register Select
-5  (RW)   → GND      | Read/Write (write-only)
-6  (EN)   → D15      | Enable
-11 (D4)   → D27      | Data Bit 4
-12 (D5)   → D26      | Data Bit 5
-13 (D6)   → D25      | Data Bit 6
-14 (D7)   → D13      | Data Bit 7
-15 (A)    → 5V       | Backlight+ (through 220Ω)
-16 (K)    → GND      | Backlight-
+|LCD Pin → ESP32 Pin | Function                 |
+|────────────────────|──────────────────────────|
+|  (VSS)  → GND      | Ground                   |
+|  (VDD)  → 5V       | Power                    |
+|  (VO)   → GND      | Contrast (tied to GND)   |
+|  (RS)   → D21      | Register Select          |
+|  (RW)   → GND      | Read/Write (write-only)  |
+|  (EN)   → D15      | Enable                   |
+|  (D4)   → D27      | Data Bit 4               |
+|  (D5)   → D26      | Data Bit 5               |
+|  (D6)   → D25      | Data Bit 6               |
+|  (D7)   → D13      | Data Bit 7               |
+|  (A)    → 5V       | Backlight+ (through 220Ω)|
+|  (K)    → GND      | Backlight-               |    
 ```
 
 #### Servo Motor (MG996R)
 ```
-Servo Wire Color → ESP32 Pin | Function
-──────────────────────────────
-Yellow (Signal)  → D2         | PWM Control
-Red (VCC)        → 5V         | Power
-Brown (GND)      → GND        | Ground
+|Servo Wire Color → ESP32 Pin  | Function   |
+|──────────────────────────────|────────────|
+|Yellow (Signal)  → D2         | PWM Control|
+|Red (VCC)        → 5V         | Power      |
+|Brown (GND)      → GND        | Ground     |
 ```
 
 #### IR Sensors (4x Modules)
 ```
-Slot | OUT Pin → ESP32 | VCC → 5V | GND → GND
-─────────────────────────────────────────
-A    | OUT → D34       | 5V  | GND
-B    | OUT → D35       | 5V  | GND
-C    | OUT → D32       | 5V  | GND
-D    | OUT → D33       | 5V  | GND
+|Slot | OUT Pin → ESP32 | VCC → 5V | GND → GND|
+|─────|─────────────────|──────────|──────────|
+|A    | OUT → D34       | 5V       | GND      |
+|B    | OUT → D35       | 5V       | GND      |
+|C    | OUT → D32       | 5V       | GND      |
+|D    | OUT → D33       | 5V       | GND      |
 ```
 
 #### LEDs with 220Ω Resistors
 ```
-Slot | Connection
-──────────────────────────────────────
-A    | D12 → [220Ω] → LED(+) ⊕ LED(-) → GND
-B    | D14 → [220Ω] → LED(+) ⊕ LED(-) → GND
-C    | D4  → [220Ω] → LED(+) ⊕ LED(-) → GND
-D    | D17 → [220Ω] → LED(+) ⊕ LED(-) → GND
+|Slot | Connection                           |
+|─────|──────────────────────────────────────|
+|A    | D12 → [220Ω] → LED(+) ⊕ LED(-) → GND|
+|B    | D14 → [220Ω] → LED(+) ⊕ LED(-) → GND|
+|C    | D4  → [220Ω] → LED(+) ⊕ LED(-) → GND|
+|D    | D17 → [220Ω] → LED(+) ⊕ LED(-) → GND|
 ```
 
 #### RFID Module (Real Hardware - MFRC522)
 ```
-RFID Pin → ESP32 Pin | Function
-────────────────────────────
-VCC      → 3V3       | Power (3.3V)
-GND      → GND       | Ground
-RST      → D22       | Reset
-SDA      → D5        | Chip Select (SPI)
-SCK      → D18       | Clock (SPI)
-MOSI     → D23       | Data In (SPI)
-MISO     → D19       | Data Out (SPI)
+|RFID Pin → ESP32 Pin | Function         |
+|─────────────────────|──────────────────| 
+|VCC      → 3V3       | Power (3.3V)     |
+|GND      → GND       | Ground           |
+|RST      → D22       | Reset            |
+|SDA      → D5        | Chip Select (SPI)|
+|SCK      → D18       | Clock (SPI)      |
+|MOSI     → D23       | Data In (SPI)    |
+|MISO     → D19       | Data Out (SPI)   |
 ```
 
 #### Virtual Terminal (Proteus Simulation Only)
@@ -194,7 +194,7 @@ GND → GND          | Ground
 ## ⚡ Wire Color Coding
 
 | Wire Color | Function             | Voltage |
-|----------- |----------------------|---------|
+|----------- |--------------------- -|---------|
 | 🔴 Red    | Power (+5V)           | +5V DC  |
 | ⚫ Black  | Ground (GND)          | 0V      |
 | 🟡 Yellow | Signal/Data (Generic) | 3.3V-5V |
