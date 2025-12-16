@@ -74,7 +74,7 @@ The Smart Parking System is an automated parking management solution that:
 
 ### Complete System Diagram
 
-![Circuit Schematic](circuit/Schematic_smartparking_2025-12-17.jpg)
+![Circuit Schematic](Schematic_smartparking_2025-12-17.png)
 
 **Schematic Details:**
 - **Left Side**: ESP32 microcontroller with LCD display and servo motor
