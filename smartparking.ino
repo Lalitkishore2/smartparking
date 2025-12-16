@@ -3,7 +3,6 @@
  * - Servo opens instantly to 0° when RFID scanned
  * - Servo closes instantly to 90° after 5 seconds
  * - Admin dashboard requires password "0000"
- * - Admin dashboard now shows parking slots interface (read-only)
  * - All other features: Profile edit, History tracking, etc.
  */
 
@@ -19,12 +18,12 @@
 #include <Preferences.h>
 
 // ==================== CONFIGURATION ====================
-const char* ssid = "POCO X6 Neo 5G";
-const char* password = "lalitkishore27";
+const char* ssid = "*********";
+const char* password = "*******";
 const char* hostname = "smartparking";
 
 // Firebase Configuration
-const char* DATABASE_URL = "https://smartparking-dea99-default-rtdb.asia-southeast1.firebasedatabase.app/";
+const char* DATABASE_URL = "https://smartparking-dea99-******-rtdb.asia-southeast1.firebasedatabase.app/";
 
 // ==================== PIN DEFINITIONS ====================
 #define SS_PIN 5
