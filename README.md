@@ -339,15 +339,6 @@ ECE|Engineering Student |
 SRM University  
 Dec 2025
 
----
-
-## 📞 Support
-
-For issues or questions:
-1. Check the troubleshooting section
-2. Review circuit connections
-3. Verify code compilation
-4. Check Proteus simulation logs
 
 ---
 
