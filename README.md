@@ -193,14 +193,14 @@ GND → GND          | Ground
 
 ## ⚡ Wire Color Coding
 
-| Wire Color | Function             | Voltage |
-|----------- |--------------------- -|---------|
-| 🔴 Red    | Power (+5V)           | +5V DC  |
-| ⚫ Black  | Ground (GND)          | 0V      |
-| 🟡 Yellow | Signal/Data (Generic) | 3.3V-5V |
-| 🔵 Blue   | Alternative Signal    | 3.3V-5V |
-| 🟢 Green  | Alternative Signal    | 3.3V-5V |
-| ⚪ White  | Servo Control         | PWM     |
+| Wire Color | Function              | Voltage |
+|─────────── |───────────────────────|─────────|
+|     Red    | Power (+5V)           | +5V DC  |
+|    Black   | Ground (GND)          | 0V      |
+|    Yellow  | Signal/Data (Generic) | 3.3V-5V |
+|    Blue    | Alternative Signal    | 3.3V-5V |
+|    Green   | Alternative Signal    | 3.3V-5V |
+|    White   | Servo Control         | PWM     |
 
 ---
 
