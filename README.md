@@ -389,70 +389,8 @@ Update Web Dashboard
 
 ### Requirements
 
-- Proteus 8+ (Free trial available at [labcenter.com](https://www.labcenter.com))
-- ESP32 library for Proteus (included in circuit files)
 - Arduino IDE for code compilation
 
-### Simulation Setup
-
-1. **Add ESP32 Library to Proteus**
-   - Download `ESP32.LIB` and `ESP32.IDX`
-   - Copy to: `C:\Program Files\Labcenter Electronics\Proteus 8\LIBRARY`
-
-2. **Create Schematic**
-   - New Project → Create Schematic
-   - Add components: ESP32, LCD, Servo, IR Sensors, LEDs, Virtual Terminals
-   - Wire as per circuit diagram
-
-3. **Compile Code**
-   - Arduino IDE: Sketch → Verify
-   - Sketch → Export compiled Binary
-   - Note the `.hex` file location
-
-4. **Link Code to ESP32**
-   - Double-click ESP32 in Proteus
-   - Program File → Browse → Select `.hex` file
-   - Click OK
-
-5. **Run Simulation**
-   - Click Play (▶) button
-   - Simulation starts
-   - Double-click Virtual Terminal 1
-   - Type authorized UID: `FE974106` → Press Enter
-   - Watch LCD, Servo, and LEDs respond
-
-### Test Scenarios
-
-**Test 1: Authorized Access**
-```
-Input: FE974106 (Thirumal's card)
-Expected:
-├─ LCD shows "Access Granted!"
-├─ Servo rotates (gate opens)
-├─ LED A turns ON
-└─ Terminal 2 shows "GRANTED"
-```
-
-**Test 2: Unauthorized Access**
-```
-Input: INVALID123 (Unknown card)
-Expected:
-├─ LCD shows "Access Denied!"
-├─ Servo stays closed
-├─ LED stays OFF
-└─ Terminal 2 shows "DENIED"
-```
-
-**Test 3: Authorized User List**
-```
-Valid UIDs:
-├─ FE974106 → Thirumal (TN-09-CD-5678)
-├─ 8581F905 → Lochan (TN-10-AB-1234)
-├─ 090AA694 → Lalit (TN-11-EF-9012)
-└─ F9A70FAB → Muthu (TN-12-GH-3456)
-```
-
----
 
 ## 🔐 Security Features
 
