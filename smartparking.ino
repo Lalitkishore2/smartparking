@@ -23,7 +23,7 @@ const char* password = "*******";
 const char* hostname = "smartparking";
 
 // Firebase Configuration
-const char* DATABASE_URL = "https://smartparking-dea99-******-rtdb.asia-southeast1.firebasedatabase.app/";
+const char* DATABASE_URL = "https://******-rtdb.asia-southeast1.firebasedatabase.app/";
 
 // ==================== PIN DEFINITIONS ====================
 #define SS_PIN 5
