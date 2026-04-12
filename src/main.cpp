@@ -34,13 +34,13 @@
 #include <time.h>
 
 // ==================== CONFIGURATION ====================
-// WiFi Configuration - set these in your local copy before flashing
-const char* ssid = "YOUR_WIFI_SSID";
-const char* password = "YOUR_WIFI_PASSWORD";
+// WiFi Configuration
+const char* ssid = "POCO";
+const char* password = "lalitkishore27";
 
 // Firebase Firestore Configuration
 const char* FIREBASE_PROJECT_ID = "smartparkingsystem-bcea5";
-const char* FIREBASE_API_KEY = "YOUR_FIREBASE_WEB_API_KEY";
+const char* FIREBASE_API_KEY = "AIzaSyBF2zuJAzrVoCOU8eZ-oYJwJsBMlRpq-uE";
 const String FIRESTORE_BASE_URL = "https://firestore.googleapis.com/v1/projects/" + 
                                    String(FIREBASE_PROJECT_ID) + 
                                    "/databases/(default)/documents";
